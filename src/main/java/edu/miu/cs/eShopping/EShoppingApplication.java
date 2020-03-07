@@ -24,7 +24,7 @@ public class EShoppingApplication {
 	    public Docket api() { 
 	        return new Docket(DocumentationType.SWAGGER_2)  
 	          .select()  
-	          .apis(RequestHandlerSelectors.basePackage("miu.edu"))             
+	          .apis(RequestHandlerSelectors.basePackage("edu.miu.cs.eShopping"))             
 	          .paths(PathSelectors.any())                          
 	          .build()
 	          .apiInfo(apiInfo());                                           
