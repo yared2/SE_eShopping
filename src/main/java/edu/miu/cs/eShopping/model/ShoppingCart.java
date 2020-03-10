@@ -3,9 +3,16 @@ package edu.miu.cs.eShopping.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class ShoppingCart {
 	
-	
+	@Id
+	@GeneratedValue
+	private int cartNumber;
 	private int itemCount;    
 	private double totalPrice;
 	private int capacity;	

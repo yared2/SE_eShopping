@@ -9,5 +9,6 @@ public interface ItemService {
 	public void addItem(Item item);
 	public void deletItem(Item item);
 	public List<Item> GetItem();
+	public Item findItem(int id);
 	
 }

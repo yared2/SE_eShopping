@@ -9,8 +9,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 
-@Setter
-@Getter
+
 @Entity
 public class Item {
 	
@@ -24,6 +23,38 @@ public class Item {
 	  	
 		public Item() {
 			super();
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public int getColor() {
+			return color;
+		}
+
+		public void setColor(int color) {
+			this.color = color;
+		}
+
+		public int getWeight() {
+			return weight;
+		}
+
+		public void setWeight(int weight) {
+			this.weight = weight;
+		}
+
+		public int getPrice() {
+			return price;
+		}
+
+		public void setPrice(int price) {
+			this.price = price;
 		}
 	
 	

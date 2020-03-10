@@ -32,5 +32,10 @@ public class ItemServiceImple  implements ItemService{
 	return	itemrepo.findAll();
 		
 	}
+	public Item findItem(int id) {
+		Item item=itemrepo.findById(id).get();
+		
+		return item;
+	}
 	
 }

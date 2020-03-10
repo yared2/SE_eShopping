@@ -2,14 +2,26 @@ package edu.miu.cs.eShopping.model;
 
 import java.util.List;
 
-public class Bill {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-    private User user;
+@Entity
+public class Bill {
+	@Id
+	@GeneratedValue
+	private int billNumer;
+	private User user;
     private List<Item> items;
 
     public Bill() {
     }
 
+    public int getBillNumer() {
+ 		return billNumer;
+ 	}
+
+    
     public Bill(User user, List<Item> items) {
         this.user = user;
         this.items = items;
