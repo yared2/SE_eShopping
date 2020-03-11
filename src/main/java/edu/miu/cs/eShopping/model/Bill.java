@@ -5,14 +5,18 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name="bills")
 public class Bill {
 	@Id
 	@GeneratedValue
 	private int billNumer;
 	private User user;
-    private List<Item> items;
+	@OneToMany(mappedBy="items")
+	private List<Item> items;
 
     public Bill() {
     }

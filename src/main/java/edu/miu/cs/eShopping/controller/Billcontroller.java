@@ -18,7 +18,7 @@ public class Billcontroller {
 	
 	
 	@GetMapping("/total")
-	public double total(@RequestParam("totla") List<Item> items) {
+	public double total(@RequestParam("total") List<Item> items) {
 		return  billserviceimple.totalPrice(items);
 	}
 
